@@ -26,7 +26,14 @@ namespace ExaminationCore
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddCors(option => option.AddPolicy("cors", policy => policy.AllowAnyHeader().AllowAnyMethod().AllowCredentials().AllowAnyOrigin()));
+            services.AddCors(options => options.AddPolicy("CorsPolicy",
+            builder =>
+            {
+                builder.AllowAnyMethod()
+                    .SetIsOriginAllowed(_ => true)
+                    .AllowAnyHeader()
+                    .AllowCredentials();
+            }));
             services.AddMvc();
         }
 
@@ -50,9 +57,7 @@ namespace ExaminationCore
 
             });
 
-            app.UseCors("cors");
-
-            app.UseMvc();
+            app.UseCors("CorsPolicy");
         }
     }
 }
