@@ -1,0 +1,14 @@
+{
+  "exclude": [
+    "**/bin",
+    "**/bower_components",
+    "**/jspm_packages",
+    "**/node_modules",
+    "**/obj",
+    "**/platforms"
+  ],
+  "userEmailAddress": "xuyao@inexten.com",
+  "emailPassword": "QVsaqDr7CCEBf6ME",
+  "DisplayName": "Admin",
+  "sqlcon": "server=.;database=Examination;uid=sa;pwd=scce;"
+}

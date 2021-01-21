@@ -26,15 +26,23 @@ namespace ExaminationCore
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddCors(options => options.AddPolicy("CorsPolicy",
-            builder =>
+
+            services.AddMvc(option =>
             {
-                builder.AllowAnyMethod()
-                    .SetIsOriginAllowed(_ => true)
-                    .AllowAnyHeader()
-                    .AllowCredentials();
-            }));
-            services.AddMvc();
+                option.Filters.Add(typeof(Util.MyAuthorizeFilter)); //并添加自定义过滤器
+                option.RespectBrowserAcceptHeader = true;
+            }).SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
+
+            #region //中间件 注册使用跨域
+            services.AddCors(options => options.AddPolicy("CorsPolicy",
+               builder =>
+               {
+                   builder.AllowAnyMethod()
+                       .SetIsOriginAllowed(_ => true)
+                       .AllowAnyHeader()
+                       .AllowCredentials();
+               }));
+            #endregion
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -51,13 +59,14 @@ namespace ExaminationCore
 
             app.UseAuthorization();
 
+            app.UseCors();
+
+
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapControllers();
+                endpoints.MapControllers().RequireCors("CorsPolicy");
 
             });
-
-            app.UseCors("CorsPolicy");
         }
     }
 }
