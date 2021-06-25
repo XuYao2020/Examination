@@ -18,7 +18,7 @@ namespace ExaminationCore.Util
         /// <param name="context"></param>
         public override void OnActionExecuting(ActionExecutingContext context)
         {
-            // 判断是否加上了不需要拦截111
+            // 判断是否加上了不需要拦截111sss
             var IsAllowAnonymous = context.Filters.Any(item => item is NoLoginAttribute);
             if (!IsAllowAnonymous)
             {
