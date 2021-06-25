@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\50361\\source\\repos\\Examination\\ExaminationCore\\ExaminationCore\\ExaminationCore.csproj": {}
+    "C:\\Users\\Yao\\source\\repos\\MyTestGit\\ExaminationCore\\ExaminationCore\\ExaminationCore.csproj": {}
   },
   "projects": {
-    "C:\\Users\\50361\\source\\repos\\Examination\\ExaminationCore\\ExaminationCore\\ExaminationCore.csproj": {
+    "C:\\Users\\Yao\\source\\repos\\MyTestGit\\ExaminationCore\\ExaminationCore\\ExaminationCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\50361\\source\\repos\\Examination\\ExaminationCore\\ExaminationCore\\ExaminationCore.csproj",
+        "projectUniqueName": "C:\\Users\\Yao\\source\\repos\\MyTestGit\\ExaminationCore\\ExaminationCore\\ExaminationCore.csproj",
         "projectName": "ExaminationCore",
-        "projectPath": "C:\\Users\\50361\\source\\repos\\Examination\\ExaminationCore\\ExaminationCore\\ExaminationCore.csproj",
-        "packagesPath": "C:\\Users\\50361\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\50361\\source\\repos\\Examination\\ExaminationCore\\ExaminationCore\\obj\\",
+        "projectPath": "C:\\Users\\Yao\\source\\repos\\MyTestGit\\ExaminationCore\\ExaminationCore\\ExaminationCore.csproj",
+        "packagesPath": "C:\\Users\\Yao\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Yao\\source\\repos\\MyTestGit\\ExaminationCore\\ExaminationCore\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\50361\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Yao\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -29,6 +29,7 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -40,6 +41,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "System.Data.SqlClient": {
               "target": "Package",
@@ -64,7 +66,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }
