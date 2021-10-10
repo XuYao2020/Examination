@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\ExaminationCore",
+    "\\ExaminationCore\\ExaminationCore",
+    "\\ExaminationCore\\ExaminationCore\\Controllers"
   ],
+  "SelectedNode": "\\ExaminationCore\\ExaminationCore\\Controllers\\ExamLoginController.cs",
   "PreviewInSolutionExplorer": false
 }
