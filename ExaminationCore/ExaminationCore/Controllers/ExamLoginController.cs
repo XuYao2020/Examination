@@ -16,7 +16,7 @@ namespace ExaminationCore.Controllers
     public class LoginController : ControllerBase
     {
         /// <summary>
-        /// 登录撒
+        /// 登录s
         /// </summary>
         /// <param name="Email"></param>
         /// <param name="Pwd"></param>
