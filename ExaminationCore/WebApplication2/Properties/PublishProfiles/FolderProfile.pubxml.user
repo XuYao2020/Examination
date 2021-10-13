@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\Users\Yao\source\repos\Examination\ExaminationCore\WebApplication2\bin\Release\netcoreapp3.1\publish\</_PublishTargetUrl>
+    <History>True|2021-10-12T15:41:55.1283778Z;True|2021-10-12T22:36:10.5961519+08:00;True|2021-10-12T21:26:59.9662475+08:00;</History>
+  </PropertyGroup>
+</Project>
